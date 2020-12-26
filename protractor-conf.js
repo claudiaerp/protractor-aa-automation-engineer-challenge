@@ -1,16 +1,29 @@
-
-
 exports.config = {
   framework: "jasmine2",
-  specs: ["specs/**/*.spec.js"],
+  //specs: ["specs/**/*.spec.js"],
+  specs: ['specs/**/shino.positive.spec.js',
+          'specs/**/shino.negative.spec.js'],
   suites: {
-    Shino: 'specs/**/shino.spec.js',
-    todo: 'specs/**/todo.spec.js'
-  },
+    PositiveTestingShino: 'specs/**/shino.positive.spec.js',
+    NegativeTestingShino: 'specs/**/shino.negative.spec.js'
+  },  
   directConnect: true,
+  params: {
+		baseUrl: 'https://www.shino.de/parkcalc/'
+	},
   seleniumAddress: 'http://localhost:4444/wd/hub',
   seleniumPort: 4444,
+  capabilities: {
+    browserName: "chrome",
+    chromeOptions: {
+      args: [
+          '--start-maximized'
+      ]
+    }
+  },
   jasmineNodeOpts: {
+    showColors: true,
+    defaultTimeoutInterval: 5000000,
     print: () => { },
   },
   onPrepare: () => {
@@ -39,13 +52,5 @@ exports.config = {
         },
       }),
     );
-  },
-  capabilities: {
-    browserName: "chrome",
-    chromeOptions: {
-      args: [
-          '--start-maximized'
-      ]
-    }
   }
 };

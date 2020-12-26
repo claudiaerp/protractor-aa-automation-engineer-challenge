@@ -15,4 +15,4 @@ To use this project you will need:
 
 ## Run tests:
 * `npm start` to run allt the test suites
-* protractor protractor-conf.js --suite `suite name` to run a specific suite, example: `protractor protractor-conf.js --suite todo`
+* protractor protractor-conf.js --suite `suite name` to run a specific suite, example: `protractor protractor-conf.js --suite PositiveTestingShino`

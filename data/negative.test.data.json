@@ -1,0 +1,72 @@
+[
+    {
+      "parkingLot": "Valet Parking",
+      "parkingTime": "",
+      "description": "Entry Date is greater than Leave Date",
+      "entryDate": "03/15/2021",
+      "entryTime": "02:00",
+      "entryDayPeriod": "AM",
+      "leaveDate": "03/14/2021",
+      "leaveTime":  "02:00",
+      "leaveDayPeriod": "AM",
+      "parkingCost": "",
+      "parkingStatement": "ERROR! YOUR LEAVING DATE OR TIME IS BEFORE YOUR STARTING DATE OR TIME",
+      "testing": "negative"
+    },
+    {
+        "parkingLot": "Valet Parking",
+        "parkingTime": "Not Specified time",
+        "description": "Entry Time and Leave Time inputs are empty",
+        "entryDate": "03/15/2021",
+        "entryTime": "",
+        "entryDayPeriod": "AM",
+        "leaveDate": "03/15/2021",
+        "leaveTime":  "",
+        "leaveDayPeriod": "AM",
+        "parkingCost": "",
+        "parkingStatement": "",
+        "testing": "negative"
+    },
+    {
+        "parkingLot": "Valet Parking",
+        "parkingTime": "Not Specified time",
+        "description": "Entry Date and Leave Date inputs are empty",
+        "entryDate": "MM/DD/YYYY",
+        "entryTime": "12:00",
+        "entryDayPeriod": "AM",
+        "leaveDate": "MM/DD/YYYY1",
+        "leaveTime":  "12:00",
+        "leaveDayPeriod": "AM",
+        "parkingCost": "",
+        "parkingStatement": "",
+        "testing": "negative"
+    },
+    {
+        "parkingLot": "Valet Parking",
+        "parkingTime": "Not Specified time",
+        "description": "Entry Time and Leave Time inputs have invalid data",
+        "entryDate": "MM/DD/YYYY",
+        "entryTime": "50:00",
+        "entryDayPeriod": "AM",
+        "leaveDate": "MM/DD/YYYY1",
+        "leaveTime":  "50:00",
+        "leaveDayPeriod": "AM",
+        "parkingCost": "",
+        "parkingStatement": "",
+        "testing": "negative"
+    },
+    {
+        "parkingLot": "Valet Parking",
+        "parkingTime": "Not Specified time",
+        "description": "Entry Time and Leave Time inputs have invalid date format",
+        "entryDate": "0315",
+        "entryTime": "50:00",
+        "entryDayPeriod": "AM",
+        "leaveDate": "0315",
+        "leaveTime":  "50:00",
+        "leaveDayPeriod": "AM",
+        "parkingCost": "",
+        "parkingStatement": "",
+        "testing": "negative"
+    }
+  ]
